@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>商品管理</b>',
+    'logo' => '<b>商品管理システム</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -227,9 +227,44 @@ return [
     'menu' => [
         [
             'text' => '商品一覧',
-            'url'  => 'items',
-            'icon' => 'fas fa-gamepad',
+            'url'  => 'items/',
+            'icon' => 'fas fa-th-list',
         ],
+        [
+            'text' => '商品管理',
+            'url'  => 'items/management',
+            'icon' => 'fas fa-th-list',
+            'can' => 'admin', //管理者のみ表示
+        ],
+        [
+            'text' => '商品登録',
+            'url'  => 'items/add',
+            'icon' => 'fa fa-plus',
+            'can' => 'admin', //管理者のみ表示
+        ],
+        [
+            'text' => 'カテゴリー管理',
+            'url'  => 'categories/',
+            'icon' => 'fas fa-th-list',
+            'can' => 'admin', //管理者のみ表示
+        ],
+        [
+            'text' => 'アカウント管理',
+            'url'  => 'users/',
+            'icon' => 'fas fa-th-list',
+            'can' => 'admin', //管理者のみ表示
+            // 'topnav_right' => true, //topnav の右側に項目を配置
+        ],
+
+        [
+            'text' => 'マイページ',
+            'url'  => 'users/mypage',
+            'icon' => 'fas fa-portrait',
+            'topnav_user' => true, //ユーザーメニューにメニュー項目を配置
+        ],
+
+
+
 
         // AdminLTEデフォルト
         /*
