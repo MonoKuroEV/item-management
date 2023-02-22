@@ -70,11 +70,18 @@ class CategoryController extends Controller
         if ($request->isMethod('put') && $request->type === 'delete') {
 
             $category = Category::find($request->id);
+
+
             $items = Item::where('items.category_id',$request->id)->get();
+
+            $category_name = Category::
+            where('categories.name','no-category')->get();
+
+            Log::debug($category_name[0]["name"]);
     
             foreach($items as $item){
     
-                $item->category_id = 1;
+                $item->category_id = $category_name[0]["id"];
                 // データを更新
                 $item->save();
             }
