@@ -226,11 +226,6 @@ return [
 
     'menu' => [
         [
-            'text' => '商品一覧',
-            'url'  => 'items/',
-            'icon' => 'fas fa-th-list',
-        ],
-        [
             'text' => '商品管理',
             'url'  => 'items/management',
             'icon' => 'fas fa-th-list',

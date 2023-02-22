@@ -77,7 +77,7 @@ class CategoryController extends Controller
             $category_name = Category::
             where('categories.name','no-category')->get();
 
-            Log::debug($category_name[0]["name"]);
+            // Log::debug($category_name[0]["name"]);
     
             foreach($items as $item){
     
