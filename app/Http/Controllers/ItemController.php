@@ -261,7 +261,4 @@ class ItemController extends Controller
         return view('item.edit',compact('item','categories'));
     }
 
-
-
-
 }

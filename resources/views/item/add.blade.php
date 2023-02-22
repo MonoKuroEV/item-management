@@ -52,7 +52,8 @@
                     <div class="card-header"><label for="detail">詳細</label></div>
                     <div class="card-body">
                         <div class="form-group">
-                            <textarea name="detail" class="form-control" id="detail" cols="30" rows="10" placeholder="詳細説明"></textarea>
+                            <textarea name="detail" class="form-control" id="detail" cols="30" rows="10" maxlength="500" placeholder="詳細説明"></textarea>
+                            <p class="text-muted">※500文字以内で書いてください。（改行は文字数に含まれます。）</p>
                         </div>
                     </div>
                 </div>

@@ -122,13 +122,6 @@ class AccountController extends Controller
                     ]);
                 }
             }
-
-            // // データを更新
-            // $user->save();
-
-            // if(isset($save)){
-            //     return back()->with('add_message', '編集内容を登録しました。');
-            // }
         }
 
         $auth_id = Auth::id();
