@@ -93,7 +93,7 @@
                 <tr>
                     <td>{{ $category->name }}</td>
                     <td class="d-flex ">
-                        @if(!($category->id === 1))
+                        @if(!($category->id === "1"))
                         
                         {{-- 商品編集 --}}
                         <div style="margin-right: 5px">
