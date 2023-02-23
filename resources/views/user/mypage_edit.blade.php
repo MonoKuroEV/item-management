@@ -33,6 +33,7 @@
                     <div class="form-group">
                         <p>現在：{{$user->name}}</p>
                         <div class="input-group">
+                            <input type="hidden" name="type" value="name" >
                             <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" placeholder="新しい名前を入力">
                             <span class="input-group-btn">
                                 <button type="submit" class="btn btn-primary">変更</button>
@@ -52,11 +53,12 @@
             {{-- 送信方式 --}}
             @method('PUT')
             <div class="card mb-3">
-                <div class="card-header"><label for="name">メールアドレス</label></div>
+                <div class="card-header"><label for="email">メールアドレス</label></div>
                 <div class="card-body">
                     <div class="form-group">
                         <p>現在：{{$user->email}}</p>
                         <div class="input-group">
+                            <input type="hidden" name="type" value="email" >
                             <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="新しいメールアドレスを入力">
                             <span class="input-group-btn">
                                 <button type="submit" class="btn btn-primary">変更</button>
@@ -83,6 +85,7 @@
 
                     <div class="form-group">
                         <p>現在：セキュリテー保護のため表示していません。</p>
+                        <input type="hidden" name="type" value="password" >
                         <div style="margin-bottom:20px">
                             <label for="password_old">変更前のパスワード</label>
                             <input type="password" class="form-control" id="password_old" name="password_old"  placeholder="変更前のパスワードを入力">

@@ -48,10 +48,11 @@ class AccountController extends Controller
             $user=User::find($auth_id);
 
             //名前が入力された時のバリデーション
-            if(isset($request->name)){
+            if($request->type === 'name'){
                 $this->validate($request, [
-                    'name' => ['string','max:50'],
+                    'name' => ['required','string','max:50'],
                 ],[
+                    'name.required' => '名前は必ず入力してください。',
                     'name.string' => '名前は文字列を指定してください。',
                     'name.max' => '名前は50文字以内にする必要があります。' 
                 ]);
@@ -66,10 +67,11 @@ class AccountController extends Controller
             };
 
             // メールアドレスが入力された時のバリデーション
-            if(isset($request->email)){
+            if($request->type === 'email'){
                 $this->validate($request, [
-                    'email' => ['string', 'email', 'max:255', 'unique:users'],
+                    'email' => ['required','string', 'email', 'max:255', 'unique:users'],
                 ],[
+                    'email.required' => 'メールアドレスは必ず入力してください。',
                     'email.string' => 'メールアドレスは文字列を指定してください。',
                     'email.email' => '有効なメールアドレス形式で指定してください。',
                     'email.max' => 'メールアドレスは、 255 文字以内にする必要があります。',
@@ -87,7 +89,7 @@ class AccountController extends Controller
 
 
             // パスワードが入力された時のバリデーション
-            if(isset($request->password_old) || isset($request->password)){
+            if($request->type === 'password'){
 
                 // 現在のパスワードのバリデーションチェック
                 $validate = $request->validate([
