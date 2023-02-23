@@ -51,7 +51,6 @@
         </div>
         
         <div class="d-flex justify-content-center">
-            <a href="{{ url('users/edit', ['id' => $user->id]) }}" class="btn btn-primary mb-3 mr-3 w-25" >権限変更</a>
             <a href="{{ url('/users')}}"  class="btn btn-secondary mb-3 w-25" >戻る</a>
         </div>
     </div>
