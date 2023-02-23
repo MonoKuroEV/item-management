@@ -226,6 +226,12 @@ return [
 
     'menu' => [
         [
+            'text' => '商品一覧',
+            'url'  => '/',
+            'icon' => 'fas fa-th-list',
+            'can' => 'admin', //管理者のみ表示
+        ],
+        [
             'text' => '商品管理',
             'url'  => 'items/management',
             'icon' => 'fas fa-th-list',
