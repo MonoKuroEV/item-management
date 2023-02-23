@@ -16,7 +16,7 @@
 @endif
 
 @if($errors->any())
-    <p class="alert-danger rounded mt-1 p-2">登録に失敗しました。入力内容を確認してください。</p>
+    <p class="alert-danger rounded mt-1 p-2">変更内容の登録に失敗しました。入力内容を確認してください。</p>
 @endif
 
 <div class="row">
