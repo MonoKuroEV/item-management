@@ -75,9 +75,7 @@ class ItemController extends Controller
         ->leftJoin('categories', 'items.category_id', '=', 'categories.id') 
         ->get();
 
-        $categories = Category::
-        select('categories.id','categories.name')
-        ->get();
+        $categories = Category::get();
 
         return view('item.index', compact('items','categories'));
     }
@@ -150,9 +148,7 @@ class ItemController extends Controller
         ->leftJoin('categories', 'items.category_id', '=', 'categories.id')  // 第一引数に結合するテーブル名、第二引数に主テーブルの結合キー、第四引数に結合するテーブルの結合キーを記述
         ->get();
 
-        $categories = Category::
-        select('categories.id','categories.name')
-        ->get();
+        $categories = Category::get();
 
         return view('item.management', compact('items','categories'));
     }
@@ -186,9 +182,7 @@ class ItemController extends Controller
         }
 
         // カテゴリーデータ取得
-        $categories = Category::        
-        select('categories.id','categories.name')
-        ->get();
+        $categories = Category::get();
 
         // 商品追加画面に遷移
         return view('item.add',compact('categories'));
