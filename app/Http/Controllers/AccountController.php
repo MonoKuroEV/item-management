@@ -50,10 +50,10 @@ class AccountController extends Controller
             //名前が入力された時のバリデーション
             if(isset($request->name)){
                 $this->validate($request, [
-                    'name' => ['string','max:255'],
+                    'name' => ['string','max:50'],
                 ],[
                     'name.string' => '名前は文字列を指定してください。',
-                    'name.max' => '名前は255文字以内にする必要があります。' 
+                    'name.max' => '名前は50文字以内にする必要があります。' 
                 ]);
 
                 // 更新データの値をセット
