@@ -10,7 +10,7 @@ return [
     */
     
     'ja'=>[
-        'Register' => 'アカウント登録',
+        'Register' => '新規登録',
         'Login' => 'ログイン',
         'E-Mail Address' => 'メールアドレス',
         'Password' => 'パスワード',
