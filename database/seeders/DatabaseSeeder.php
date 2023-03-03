@@ -104,7 +104,7 @@ class DatabaseSeeder extends Seeder
             'user_id' => '0',
             'name' => 'りんご',
             'status' => 'active',
-            'category_id' => '1',
+            'category_id' => '0',
             'detail' => 'りんごです。<br> りんごです。',
         ]);
 
