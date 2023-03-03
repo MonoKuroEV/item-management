@@ -71,7 +71,7 @@ class ItemController extends Controller
         $items = Item
         ::where('items.status', 'active')
         ->orderBy('items.created_at','DESC')
-        ->select('items.id','items.name','items.created_at','categories.name as categories_name','categories.id as categories_id')
+        ->select('items.id','items.name','items.created_at','categories.name as categories_name')
         ->leftJoin('categories', 'items.category_id', '=', 'categories.id') 
         ->get();
 

@@ -85,6 +85,10 @@ class DatabaseSeeder extends Seeder
         // カテゴリー
 
         DB::table('categories')->insert([
+            'name' => 'no-category',
+        ]);
+
+        DB::table('categories')->insert([
             'name' => '青果',
         ]);
 
@@ -94,10 +98,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('categories')->insert([
             'name' => '鮮魚',
-        ]);
-
-        DB::table('categories')->insert([
-            'name' => 'no-category',
         ]);
 
         // 商品
