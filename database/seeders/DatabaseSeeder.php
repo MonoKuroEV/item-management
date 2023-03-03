@@ -106,7 +106,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'りんご',
             'status' => 'active',
             'category_id' => '0',
-            'detail' => 'りんごです。/n りんごです。',
+            'detail' => 'りんごです。
+            りんごです。',
         ]);
 
         
