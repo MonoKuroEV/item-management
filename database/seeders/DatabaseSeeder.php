@@ -122,12 +122,92 @@ class DatabaseSeeder extends Seeder
         // 商品
         DB::table('items')->insert([
             'user_id' => '0',
+            'name' => 'ほうれん草',
+            'status' => 'active',
+            'category_id' => '0',
+            'detail' => "ホウレンソウ（ほうれん草）は、緑黄色野菜を代表する野菜。\n栄養豊富でビタミンやカロテン、鉄分、カルシウムなどの含有量が多いことが大きな特徴。",
+            'created_at' => '2023-02-17',
+            'updated_at' => '2023-02-17',
+        ]);
+
+        DB::table('items')->insert([
+            'user_id' => '0',
+            'name' => '真鯛',
+            'status' => 'active',
+            'category_id' => '0',
+            'detail' => "たい科の代表的な魚。大形、桜色で緑色の斑点(はんてん)がある。\nマダイの旬は3月～6月、9月～11月の2回訪れ、それぞれ呼び名も違い、春頃のマダイを「桜鯛」、秋頃のマダイを「紅葉鯛」と呼ぶ。",
+            'created_at' => '2023-02-18',
+            'updated_at' => '2023-02-18',
+        ]);
+
+        DB::table('items')->insert([
+            'user_id' => '0',
+            'name' => 'イサキ',
+            'status' => 'active',
+            'category_id' => '0',
+            'detail' => "スズキ目イサキ科に属する海水魚の一種。\n春～夏にかけてが旬で「梅雨イサキ」「麦わらイサキ」と呼ばれ、脂がの って美味。",
+            'created_at' => '2023-02-19',
+            'updated_at' => '2023-02-19',
+        ]);
+
+        DB::table('items')->insert([
+            'user_id' => '0',
+            'name' => '豚ヒレ肉',
+            'status' => 'negative',
+            'category_id' => '0',
+            'detail' => "ヒレはバラの上の部分にあり、1頭の豚から約1kg程しか取れない高級な部位です。",
+            'created_at' => '2023-02-20',
+            'updated_at' => '2023-02-20',
+        ]);
+
+        DB::table('items')->insert([
+            'user_id' => '0',
+            'name' => '豚ロース',
+            'status' => 'active',
+            'category_id' => '0',
+            'detail' => "ロースは豚の背中側にある部位です。ロースはきめが細かくて柔らかく、適度に脂肪がついているのが特徴。",
+            'created_at' => '2023-02-20',
+            'updated_at' => '2023-02-20',
+        ]);
+
+        DB::table('items')->insert([
+            'user_id' => '0',
+            'name' => '豚バラ',
+            'status' => 'active',
+            'category_id' => '0',
+            'detail' => "赤身と脂肪が層になっており柔らかい肉質が特徴。",
+            'created_at' => '2023-02-21',
+            'updated_at' => '2023-02-21',
+        ]);
+
+        DB::table('items')->insert([
+            'user_id' => '0',
+            'name' => '牛肉',
+            'status' => 'negative',
+            'category_id' => '0',
+            'detail' => "",
+            'created_at' => '2023-02-21',
+            'updated_at' => '2023-02-21',
+        ]);
+
+        DB::table('items')->insert([
+            'user_id' => '0',
+            'name' => '豚肩ロース',
+            'status' => 'negative',
+            'category_id' => '0',
+            'detail' => "",
+            'created_at' => '2023-02-22',
+            'updated_at' => '2023-02-22',
+        ]);
+
+        DB::table('items')->insert([
+            'user_id' => '0',
             'name' => 'りんご',
             'status' => 'active',
             'category_id' => '0',
-            'detail' => "りんごです。\nりんごです。",
-            'created_at' => '2023-02-17',
-            'updated_at' => '2023-02-17',
+            'detail' => "リンゴ酸やクエン酸など、豊富な有機酸が疲労回復を促進する。\n豊富な水溶性食物繊維のペクチンには、整腸作用、コレステロールの吸収抑制効果が期待でき、抗酸化作用や脂肪低減作用、老化防止効果の期待できるポリフェノールも豊富。",
+            'created_at' => '2023-02-23',
+            'updated_at' => '2023-02-23',
         ]);
 
         
