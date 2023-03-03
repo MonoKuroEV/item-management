@@ -25,6 +25,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'master1@gmail.com',
             'password' => Hash::make('12345678'),
             'role' => '2',
+            'created_at' => '2023-02-17',
+            'updated_at' => '2023-02-17',
         ]);
         
         DB::table('users')->insert([
@@ -32,6 +34,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'master2@gmail.com',
             'password' => Hash::make('12345678'),
             'role' => '2',
+            'created_at' => '2023-02-18',
+            'updated_at' => '2023-02-18',
         ]);
         
         DB::table('users')->insert([
@@ -39,6 +43,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'master3@gmail.com',
             'password' => Hash::make('12345678'),
             'role' => '2',
+            'created_at' => '2023-02-19',
+            'updated_at' => '2023-02-19',
         ]);
 
         DB::table('users')->insert([
@@ -46,6 +52,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin1@gmail.com',
             'password' => Hash::make('12345678'),
             'role' => '1',
+            'created_at' => '2023-02-20',
+            'updated_at' => '2023-02-20',
         ]);
 
         DB::table('users')->insert([
@@ -53,6 +61,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin2@gmail.com',
             'password' => Hash::make('12345678'),
             'role' => '1',
+            'created_at' => '2023-02-21',
+            'updated_at' => '2023-02-21',
         ]);
 
         DB::table('users')->insert([
@@ -60,6 +70,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin3@gmail.com',
             'password' => Hash::make('12345678'),
             'role' => '1',
+            'created_at' => '2023-02-22',
+            'updated_at' => '2023-02-22',
         ]);
 
         DB::table('users')->insert([
@@ -67,6 +79,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'test1@gmail.com',
             'password' => Hash::make('12345678'),
             'role' => '0',
+            'created_at' => '2023-02-23',
+            'updated_at' => '2023-02-23',
         ]);
 
         DB::table('users')->insert([
@@ -74,6 +88,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'test2@gmail.com',
             'password' => Hash::make('12345678'),
             'role' => '0',
+            'created_at' => '2023-02-24',
+            'updated_at' => '2023-02-24',
         ]);
 
         DB::table('users')->insert([
@@ -81,6 +97,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'test3@gmail.com',
             'password' => Hash::make('12345678'),
             'role' => '0',
+            'created_at' => '2023-02-25',
+            'updated_at' => '2023-02-25',
         ]);
         
         // カテゴリー
@@ -108,7 +126,7 @@ class DatabaseSeeder extends Seeder
             'status' => 'active',
             'category_id' => '0',
             'detail' => "りんごです。\nりんごです。",
-            'updated_at' => '2023-02-17',
+            'created_at' => '2023-02-17',
             'updated_at' => '2023-02-17',
         ]);
 
