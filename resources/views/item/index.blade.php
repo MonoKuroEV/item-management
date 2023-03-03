@@ -121,7 +121,11 @@
                 @foreach ($items as $item)
                     <tr>
                         <td>{{ $item->name }}</td>
+                        @if(!isset($item->categories_name))
+                        <td>no-category</td>
+                        @elseif(isset($item->categories_name))
                         <td>{{ $item->categories_name}}</td>
+                        @endif
                         <td>{{ $item->created_at }}</td>
                         <td>
                             {{-- 商品詳細 --}}
