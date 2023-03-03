@@ -121,7 +121,7 @@
                 @foreach ($items as $item)
                     <tr>
                         <td>{{ $item->name }}</td>
-                        <td>{{ $item->categories_name}}</td>
+                        <td>{{ $item->categories_id}}</td>
                         <td>{{ $item->created_at }}</td>
                         <td>
                             {{-- 商品詳細 --}}
