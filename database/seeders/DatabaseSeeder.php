@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -106,10 +107,9 @@ class DatabaseSeeder extends Seeder
             'name' => 'りんご',
             'status' => 'active',
             'category_id' => '0',
-            'detail' => '
-            りんごです。
-            りんごです。
-            ',
+            'detail' => "りんごです。\nりんごです。",
+            'updated_at' => '2023-02-17',
+            'updated_at' => '2023-02-17',
         ]);
 
         
