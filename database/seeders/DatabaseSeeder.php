@@ -100,6 +100,24 @@ class DatabaseSeeder extends Seeder
             'created_at' => '2023-02-25',
             'updated_at' => '2023-02-25',
         ]);
+
+        DB::table('users')->insert([
+            'name' => 'new2',
+            'email' => 'new2@example.com',
+            'password' => Hash::make('d3yv2xpg'),
+            'role' => '0',
+            'created_at' => '2023-02-25',
+            'updated_at' => '2023-02-25',
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'new3',
+            'email' => 'new3@example.com',
+            'password' => Hash::make('d8yv8xpg'),
+            'role' => '0',
+            'created_at' => '2023-02-25',
+            'updated_at' => '2023-02-25',
+        ]);
         
         // カテゴリー
 
