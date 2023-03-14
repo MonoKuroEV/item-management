@@ -44,10 +44,6 @@ Laravel 8.83.3
 
 ### テストアカウント情報
 ```
-・マスターアカウント
-メールアドレス：master1@example.com
-パスワード：s32ucemj
-
 ・管理者アカウント
 メールアドレス：admin1@example.com
 パスワード：z8qt3dkx
