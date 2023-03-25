@@ -78,11 +78,17 @@ Auth::routes();
 
             Route::post('/search',[App\Http\Controllers\AccountController::class, 'search']);  //アカウント検索
             Route::get('/', [App\Http\Controllers\AccountController::class, 'index']);  //アカウント一覧
-            Route::post('/delete', [App\Http\Controllers\AccountController::class, 'delete']);   //商品削除処理
+            Route::post('/delete', [App\Http\Controllers\AccountController::class, 'delete']);   //アカウント削除処理
             Route::get('/detail/{id}', [App\Http\Controllers\AccountController::class, 'detail']); //アカウント詳細画面表示
             Route::get('/edit/{id}', [App\Http\Controllers\AccountController::class, 'edit']); //アカウント編集画面表示
-            Route::put('/edit/{id}', [App\Http\Controllers\AccountController::class, 'edit']); //アカウント処理
+            Route::put('/edit/{id}', [App\Http\Controllers\AccountController::class, 'edit']); //アカウント編集処理
+        });
 
+        Route::group(['middleware' => ['auth', 'can:master']], function(){
+
+            Route::post('/delete', [App\Http\Controllers\AccountController::class, 'delete']);   //アカウント削除処理
+            Route::get('/edit/{id}', [App\Http\Controllers\AccountController::class, 'edit']); //アカウント権限編集画面表示
+            Route::put('/edit/{id}', [App\Http\Controllers\AccountController::class, 'edit']); //アカウント権限編集処理
         });
 
     });

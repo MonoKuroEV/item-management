@@ -164,11 +164,10 @@
 
                                     @if($role === 2)
                                     <div style="margin-right: 5px">
-                                        {{-- アカウント編集 --}}
+                                        {{-- アカウント権限編集 --}}
                                         <a href="{{ url('users/edit', ['id' => $user->id]) }}" class="btn btn-default">権限変更</a>
                                     </div>
-                                    @endif
-
+                                    
                                     <div>
                                         {{-- アカウント削除 --}}
                                         <form action="{{ url('users/delete') }}" method="POST" onsubmit="return confirm('「{{$user->name}}」を削除します。よろしいですか？')">
@@ -177,6 +176,8 @@
                                             <input type="submit" value="削除" class="btn btn-danger">
                                         </form>
                                     </div>
+                                    @endif
+                                    
                                 </td>
                                 
                             </tr>
